@@ -1,0 +1,56 @@
+.marqueeContainer{
+    /* background-color: lightblue; */
+    /* background-image: url('../images/backgrounds/slide_one.jpg'); */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.headsContainer{
+    display:flex;
+    justify-content:space-between;
+    color: white;
+}
+
+.headlineContainer{
+    background-color: pink;
+}
+.headline{
+    font-size: 5.25rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -2.2px;
+    /* width: 38.25rem; */
+    height: 17rem;
+    /* margin: 10.125rem 10.688rem 2.938rem 0; */
+    margin: 10.125rem 0 2.938rem 0;
+}
+
+.subHeadContainer{
+    background-color: orange;
+    /* display: flex;
+    align-items: center; */
+}
+
+.subHead{
+    /* width: 22.5rem; */
+    height: 14.188rem;
+    font-family: HelveticaNeue;
+    /* margin: 10.125rem 10.688rem 2.938rem 0; */
+    margin: 10.125rem 0 2.938rem 0;
+    
+}
+
+
+
+.ctaContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: coral;
+    /* width: 73.75rem; */
+    height: 11.188rem;
+    margin: 2.938rem 0 0 0.188rem;
+}

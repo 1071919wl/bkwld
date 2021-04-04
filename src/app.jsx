@@ -2,6 +2,8 @@ import React, {useState, useEffect, createContext} from 'react';
 import './assets/stylesheets/app.css';
 import { fetchContent } from './util/content_api_util';
 import NavBar from './components/navbar.jsx';
+import Marquee from './components/marquee.jsx';
+import {WaveLoading} from 'react-loadingg';
 export const ContentContext = createContext();
 
 
@@ -25,16 +27,17 @@ const App = () => {
 
     return (
         <div className="App">
-            {console.log(data)}
             {!load ?
                 <div className='appContainer'>
                     <ContentContext.Provider value={[data, setData]}>
                         <NavBar />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad laboriosam ipsam aliquam repellendus error atque sunt nesciunt sapiente? Ipsa magni dicta suscipit culpa! Ducimus mollitia fuga dolorem libero incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad laboriosam ipsam aliquam repellendus error atque sunt nesciunt sapiente? Ipsa magni dicta suscipit culpa! Ducimus mollitia fuga dolorem libero incidunt!</p>
+                        {/* <Marquee /> */}
                     </ContentContext.Provider>
                 </div>
             :
-                <div>Loading...</div>
+                <div>
+                    <WaveLoading size='large' />
+                </div>
             }
         </div>
     );

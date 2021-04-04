@@ -1,8 +1,12 @@
 .App{
     min-height: 100vh;
-    background-image: url('../images/backgrounds/slide_one.jpg');
+    background-color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+
     
 }
 .appContainer{
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
+

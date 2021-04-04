@@ -1,0 +1,29 @@
+.logoSecContainer{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: green;
+}
+
+.contactBtn{
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: solid 1px white;
+}
+
+.menuContainer{
+    background-color: yellow;
+    margin-top: 18px;
+}
+.menuIndividual{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.menuBtn:hover{
+    color: rgb(255, 175, 28);
+}
+
