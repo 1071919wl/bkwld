@@ -7,7 +7,8 @@
     min-height: 100vh;
     padding-right: 8rem;
     padding-left: 8rem;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     padding-top: 10rem;
 }
 
@@ -18,33 +19,37 @@
 }
 
 .headlineContainer{
-    background-color: pink;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    /* max-width: 40vw; */
 }
 .headline{
     font-size: 5.25rem;
     font-weight: bold;
-    /* font-stretch: normal; */
     font-style: normal;
     line-height: 1;
     letter-spacing: -2.2px;
     /* width: 38.25rem; */
-    height: 17rem;
+    /* height: 17rem; */
     /* margin: 10.125rem 10.688rem 2.938rem 0; */
-    margin: 14.125rem 0 2.938rem 0;
+    /* margin: 14.125rem 0 2.938rem 0; */
+
 }
 
 .subHeadContainer{
-    background-color: orange;
-    /* display: flex;
-    align-items: center; */
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    max-width: 35vw;
 }
 
+
 .subHead{
-    /* width: 22.5rem; */
     height: 14.188rem;
     font-family: HelveticaNeue;
-    /* margin: 10.125rem 10.688rem 2.938rem 0; */
-    margin: 14.125rem 0 2.938rem 0;
+    margin: 10.125rem 5.688rem 2.938rem 0;
+
     
 }
 
@@ -53,8 +58,31 @@
 .ctaContainer {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: white;
-    /* width: 73.75rem; */
-    height: 11.188rem;
+    height: 15.188rem;
     margin: 2.938rem 0 0 0.188rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-bottom: 8rem;
+}
+
+.ctaTitle{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 825px) {
+    .headsContainer {
+        flex-direction: column;
+    }
+    .subHeadContainer {
+        display: flex;
+        align-items: center;
+        max-width: 70vw;
+        height: 20vh;
+
+    }
+
 }

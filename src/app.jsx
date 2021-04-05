@@ -2,8 +2,9 @@ import React, {useState, useEffect, createContext} from 'react';
 import './assets/stylesheets/app.css';
 import { fetchContent } from './util/content_api_util';
 import NavBar from './components/navbar.jsx';
-import Marquee from './components/marquee.jsx';
+// import Marquee from './components/marquee.jsx';
 import {WaveLoading} from 'react-loadingg';
+
 export const ContentContext = createContext();
 
 
@@ -13,8 +14,8 @@ const App = () => {
     const [load, setLoad] = useState(false);
     const [error, setError] = useState();
 
+    //fetches content on mount displaying loading screen when in progress
     useEffect(() => {
-
         setLoad(true)
         fetchContent().then(res => {
             setLoad(false);
@@ -23,7 +24,6 @@ const App = () => {
             setLoad(false);
             setError('403 Not Found page')
         });
-
     }, [])
 
     return (

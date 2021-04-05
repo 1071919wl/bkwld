@@ -7,6 +7,7 @@ import About from '../assets/images/backgrounds/slide_three.jpg'
 
 const Marquee = ({page}) => {
 
+    //determines which image to display
     const[bgImg, setBgImg] = useState(Industries);
 
     //updates background image depending on prop
@@ -31,11 +32,11 @@ const Marquee = ({page}) => {
                 </div>
             </div>
             <div className='ctaContainer'>
-                <div>
+                <div className='ctaTitle'> 
                     <p>{page?.blocks[0].cta}</p>
                 </div>
                 <div>
-                    <p>LET'S TALK. --> </p>
+                    <p>LET'S TALK. &#x2192;</p>
                 </div>
             </div>
         </div>

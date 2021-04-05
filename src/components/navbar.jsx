@@ -9,6 +9,7 @@ const NavBar = (props) => {
     const [data, setData] = useContext(ContentContext);
     const [page, setPage] = useState();
 
+    //intializes page hook for child render
     useEffect(() => {
         setPage(data[0])
     },[data])
@@ -16,7 +17,6 @@ const NavBar = (props) => {
 
     return (
         <div className="navbarContainer">
-            {console.log(data)}
             {data !== [] ?
                 <div className='logoMenuContainer'>
                     <div className='logoSecContainer'>
