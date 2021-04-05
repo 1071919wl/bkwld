@@ -11,6 +11,7 @@ const App = () => {
 
     const [data, setData] = useState([]);
     const [load, setLoad] = useState(false);
+    const [error, setError] = useState();
 
     useEffect(() => {
 
@@ -18,15 +19,16 @@ const App = () => {
         fetchContent().then(res => {
             setLoad(false);
             setData(res);
-        })
-        // .catch(err => {
-        //     setData(['403 Not Found page'])
-        // });
+        }).catch(err => {
+            setLoad(false);
+            setError('403 Not Found page')
+        });
 
     }, [])
 
     return (
         <div className="App">
+            <h1 className='error'>{error}</h1>
             {!load ?
                 <div className='appContainer'>
                     <ContentContext.Provider value={[data, setData]}>

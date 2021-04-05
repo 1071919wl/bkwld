@@ -16,22 +16,29 @@ const NavBar = (props) => {
 
     return (
         <div className="navbarContainer">
-            <div className='logoSecContainer'>
-                <div>
-                    <ReactLogo/>
-                </div>
-                <div>
-                    <button className='contactBtn'>Contact Us</button>
-                </div>
-            </div>
-            <div className='menuContainer'>
-                {data.map((content) => (
-                    <div key={content.title} className='menuIndividual'>
-                        <button className='menuBtn' onClick={()=>setPage(content)}>{content.title}</button> 
+            {console.log(data)}
+            {data !== [] ?
+                <div className='logoMenuContainer'>
+                    <div className='logoSecContainer'>
+                        <div className='logoContainer'>
+                            <ReactLogo/>
+                        </div>
+                        <div>
+                            <button className='contactBtn'>Contact Us</button>
+                        </div>
                     </div>
-                ))}
-            </div>
-            <Marquee page={page}/>
+                    <div className='menuContainer'>
+                        {data.map((content) => (
+                            <div key={content.title} className='menuIndividual'>
+                                <button className='menuBtn' onClick={()=>setPage(content)}>{content.title}</button> 
+                            </div>
+                        ))}
+                    </div>
+                    <Marquee page={page}/>
+                </div>
+            :
+                <div></div>
+            }
         </div>
     );
 }

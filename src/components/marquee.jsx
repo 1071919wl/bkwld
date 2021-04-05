@@ -32,7 +32,7 @@ const Marquee = ({page}) => {
             </div>
             <div className='ctaContainer'>
                 <div>
-                    <p>Nemo enim ipsam voluptatem quia voluptas.</p>
+                    <p>{page?.blocks[0].cta}</p>
                 </div>
                 <div>
                     <p>LET'S TALK. --> </p>

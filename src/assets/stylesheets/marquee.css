@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    height: 100vh;
+    padding-top: 10rem;
 }
 
 .headsContainer{
@@ -19,14 +23,14 @@
 .headline{
     font-size: 5.25rem;
     font-weight: bold;
-    font-stretch: normal;
+    /* font-stretch: normal; */
     font-style: normal;
     line-height: 1;
     letter-spacing: -2.2px;
     /* width: 38.25rem; */
     height: 17rem;
     /* margin: 10.125rem 10.688rem 2.938rem 0; */
-    margin: 10.125rem 0 2.938rem 0;
+    margin: 14.125rem 0 2.938rem 0;
 }
 
 .subHeadContainer{
@@ -40,7 +44,7 @@
     height: 14.188rem;
     font-family: HelveticaNeue;
     /* margin: 10.125rem 10.688rem 2.938rem 0; */
-    margin: 10.125rem 0 2.938rem 0;
+    margin: 14.125rem 0 2.938rem 0;
     
 }
 
@@ -49,7 +53,7 @@
 .ctaContainer {
     display: flex;
     justify-content: space-evenly;
-    background-color: coral;
+    background-color: white;
     /* width: 73.75rem; */
     height: 11.188rem;
     margin: 2.938rem 0 0 0.188rem;
