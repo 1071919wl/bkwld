@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import {ReactComponent as ReactLogo} from '../assets/images/abc_logo.svg';
 import {ContentContext} from "../app.jsx";
-import '../assets/stylesheets/navbar.css';
 import Marquee from './marquee.jsx';
+import '../assets/stylesheets/navbar.css';
 
 
 const NavBar = (props) => {

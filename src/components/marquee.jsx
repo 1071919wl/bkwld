@@ -36,7 +36,7 @@ const Marquee = ({page}) => {
                     <p>{page?.blocks[0].cta}</p>
                 </div>
                 <div>
-                    <p>LET'S TALK. &#x2192;</p>
+                    <button>LET'S TALK. &#x2192;</button>
                 </div>
             </div>
         </div>
