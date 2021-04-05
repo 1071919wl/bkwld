@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/bkwld/static/css/main.4ca56e3d.chunk.css",
+    "main.js": "/bkwld/static/js/main.05be6d32.chunk.js",
+    "main.js.map": "/bkwld/static/js/main.05be6d32.chunk.js.map",
+    "runtime-main.js": "/bkwld/static/js/runtime-main.4f378c65.js",
+    "runtime-main.js.map": "/bkwld/static/js/runtime-main.4f378c65.js.map",
+    "static/js/2.14e90416.chunk.js": "/bkwld/static/js/2.14e90416.chunk.js",
+    "static/js/2.14e90416.chunk.js.map": "/bkwld/static/js/2.14e90416.chunk.js.map",
+    "index.html": "/bkwld/index.html",
+    "static/css/main.4ca56e3d.chunk.css.map": "/bkwld/static/css/main.4ca56e3d.chunk.css.map",
+    "static/js/2.14e90416.chunk.js.LICENSE.txt": "/bkwld/static/js/2.14e90416.chunk.js.LICENSE.txt",
+    "static/media/abc_logo.91a3fc64.svg": "/bkwld/static/media/abc_logo.91a3fc64.svg",
+    "static/media/slide_one.df407357.jpg": "/bkwld/static/media/slide_one.df407357.jpg",
+    "static/media/slide_three.25c6c4ee.jpg": "/bkwld/static/media/slide_three.25c6c4ee.jpg",
+    "static/media/slide_two.b7b871cc.jpg": "/bkwld/static/media/slide_two.b7b871cc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f378c65.js",
+    "static/js/2.14e90416.chunk.js",
+    "static/css/main.4ca56e3d.chunk.css",
+    "static/js/main.05be6d32.chunk.js"
+  ]
+}
